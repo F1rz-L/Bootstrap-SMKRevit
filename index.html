@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
+    <title>Bootstrap - SMKRevit</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
     <script src="/Bootstrap/js/bootstrap.bundle.min.js" async defer></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
         <div class="container-fluid">
             <div class="d-flex">
                 <a href="#">
@@ -37,6 +38,220 @@
                 </li>
             </ul>
         </div>
-    </nav>
+  </nav>
+
+    <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/download.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h5>First slide label</h5>
+                <p>Time passes, people move. Like a river's flow, it never ends.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/1193498.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h5>Second slide label</h5>
+                <p>There is a fine line between courage and recklessness.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/hyrule.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h5>Third slide label</h5>
+                <p>But courage need not be remembered… for it is never forgotten</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+  </div>
+
+  <!-- Container/Card -->
+  <div class="container-fluid">
+    <div class="row bg-danger">
+      <div class="col text-white text-center py-3">
+        <h1>Pemrograman</h1>
+      </div>
+    </div>
+    
+    <div class="row mt-3 g-2">
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="card w-100">
+          <img src="/img/Team_Instinct_emblem.png" class="card-img-top" alt="Team Instinct">
+          <div class="card-body text-center">
+            <h5 class="card-title">Team Instinct</h5>
+            <p class="card-text">The cooler team of the bunch.</p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-primary">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card w-100">
+          <img src="/img/Team_Mystic_emblem.png" class="card-img-top" alt="Team Mystic">
+          <div class="card-body text-center">
+            <h5 class="card-title">Team Mystic</h5>
+            <p class="card-text">Overrated</p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-primary">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card w-100">
+          <img src="/img/valor.png" class="card-img-top" alt="Team Valor">
+          <div class="card-body text-center">
+            <h5 class="card-title">Team Valor</h5>
+            <p class="card-text">Mending Instinct</p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-primary">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card w-100">
+          <img src="/img/GO_Rocket_logo.png" class="card-img-top padrock" alt="Team GO Rocket">
+          <div class="card-body text-center">
+            <h5 class="card-title">Team GO Rocket</h5>
+            <p class="card-text">Villain</p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-primary">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabel -->
+  <div class="container-fluid">
+    <div class="row bg-danger mt-5">
+      <div class="col text-light text-center py-3">
+        <h1>Jadwal</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3" style="width: auto;">
+      <div class="col-lg-8 ">
+        <table class="table table-bordered border-black text-center">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Senin</th>
+              <th scope="col">Selasa</th>
+              <th scope="col">Rabu</th>
+              <th scope="col">Kamis</th>
+              <th scope="col">Jumat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td rowspan="2">Bhs. Jepang</td>
+              <td rowspan="4">RPL</td>
+              <td rowspan="3">PAI</td>
+              <td rowspan="2">Sejarah</td>
+              <td rowspan="2">PKWU</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td rowspan="2">Bhs. Jerman</td>
+              <td rowspan="2">PJOK</td>
+              <td rowspan="5">Web</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td colspan="">-</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td rowspan="6">RPL</td>
+              <td rowspan="4">Bhs. Inggris</td>
+              <td>BK</td>
+              <td rowspan="3">Bhs. Indonesia</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td rowspan="2">Bhs. Daerah</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td rowspan="3">Matematika</td>
+              <td rowspan="3">RPL</td>
+              <td rowspan="3">-</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td rowspan="2">PPKN</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td rowspan="2">PKWU</td>
+              <td rowspan="3" colspan="4">-</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Registration Form</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Name</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
