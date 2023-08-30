@@ -15,6 +15,8 @@ body::after{
     body::after{
         content: "MD";
     }
+
+    
 }
 
 @media(min-width: 992px){
@@ -62,40 +64,20 @@ body::after{
 }
 
 @keyframes anihover{
-    0%{background-image: linear-gradient(transparent);}
-    5%{background-image: linear-gradient(to right, transparent, transparent, magenta, transparent, transparent);}
-    10%{background-image: linear-gradient(to right, transparent, magenta, transparent);}
-    15%{background-image: linear-gradient(to right, transparent, magenta, magenta, magenta, transparent);}
-    /* 20%{
-        .card {
-            background-image: linear-gradient(to right, transparent, magenta, magenta, magenta, transparent);
-        }
-    } */
+    0%{background-image: linear-gradient(transparent); margin-top: 0.0;}
+    5%{background-image: linear-gradient(to right, magenta, transparent, transparent, transparent, transparent, transparent, magenta); margin-top: 0.3;}
+    10%{background-image: linear-gradient(to right, magenta, transparent, transparent, transparent, magenta); margin-top: 0.6px;}
+    15%{background-image: linear-gradient(to right, transparent, magenta, transparent, magenta, transparent); margin-top: 0.9px;}
+    20%{background-image: linear-gradient(to right, transparent, transparent, magenta, transparent, transparent); margin-top: 1.2px;}
+    25%{background-image: linear-gradient(to right, transparent, transparent, magenta, magenta, magenta, transparent, transparent); margin-top: 1.5px;}
+    30%{background-image: linear-gradient(to right, transparent, magenta, magenta, magenta, magenta, magenta, transparent); margin-top: 1.8px;}
+    100%{background-image: linear-gradient(to right, transparent, magenta, magenta, magenta, magenta, magenta, transparent); margin-top: 2px;}
 }
 
-@keyframes aniend{
-    15%{background-image: linear-gradient(to right, transparent, magenta, magenta, magenta, transparent);}
-}
-
-.card {
-    height: 0;
-    position: relative;
-}
 
 .card:hover{
     height: 2px;
-    position: relative;
     animation-name: anihover;
     animation-duration: 2s;
-    /* animation-name: aniend;
-    animation-delay: 2s;
-    ani */
     animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-
-
-
-    
-    /* background-image: linear-gradient(to right, transparent, magenta, magenta, magenta, transparent); */
 }    
