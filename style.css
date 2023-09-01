@@ -51,6 +51,10 @@ body::after{
     color: #eee;
 }
 
+.navbar{
+    min-height: 10%;
+}
+
 .carousel-caption p{
     color: #151515;
 }
@@ -76,7 +80,7 @@ body::after{
 
 
 .card:hover{
-    height: 2px;
+    height: 3px;
     animation-name: anihover;
     animation-duration: 2s;
     animation-fill-mode: forwards;
