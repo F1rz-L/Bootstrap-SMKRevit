@@ -69,12 +69,12 @@ body::after{
 
 @keyframes anihover{
     0%{background-image: linear-gradient(transparent); margin-top: 0.0;}
-    5%{background-image: linear-gradient(to right, magenta, transparent, transparent, transparent, transparent, transparent, magenta); margin-top: 0.3;}
-    10%{background-image: linear-gradient(to right, magenta, transparent, transparent, transparent, magenta); margin-top: 0.6px;}
-    15%{background-image: linear-gradient(to right, transparent, magenta, transparent, magenta, transparent); margin-top: 0.9px;}
-    20%{background-image: linear-gradient(to right, transparent, transparent, magenta, transparent, transparent); margin-top: 1.2px;}
-    25%{background-image: linear-gradient(to right, transparent, transparent, magenta, magenta, magenta, transparent, transparent); margin-top: 1.5px;}
-    30%{background-image: linear-gradient(to right, transparent, magenta, magenta, magenta, magenta, magenta, transparent); margin-top: 1.8px;}
+    15%{background-image: linear-gradient(to right, magenta, transparent, transparent, transparent, transparent, transparent, magenta); margin-top: 0.3;}
+    30%{background-image: linear-gradient(to right, magenta, transparent, transparent, transparent, magenta); margin-top: 0.6px;}
+    45%{background-image: linear-gradient(to right, transparent, magenta, transparent, magenta, transparent); margin-top: 0.9px;}
+    60%{background-image: linear-gradient(to right, transparent, transparent, magenta, transparent, transparent); margin-top: 1.2px;}
+    75%{background-image: linear-gradient(to right, transparent, transparent, magenta, magenta, magenta, transparent, transparent); margin-top: 1.5px;}
+    90%{background-image: linear-gradient(to right, transparent, magenta, magenta, magenta, magenta, magenta, transparent); margin-top: 1.8px;}
     100%{background-image: linear-gradient(to right, transparent, magenta, magenta, magenta, magenta, magenta, transparent); margin-top: 2px;}
 }
 
@@ -82,6 +82,6 @@ body::after{
 .card:hover{
     height: 3px;
     animation-name: anihover;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }    
